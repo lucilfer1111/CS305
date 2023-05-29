@@ -1,0 +1,28 @@
+Давхардсан хувьсагч илрүүлэхAssignment
+Холбогдох typing, typeOf функцуудыг бичсэн байна.
+
+Оролт 1:
+int main(){
+      int k;
+      int i;
+      int t;
+}
+
+Гаралт 1: 
+print(prog.V_decs())
+   // Зөв
+print(prog.typeOf("k"))
+    // int
+print(prog.typing()) 
+    {"k": "int", "i"; "int", "t": "int"}
+
+Оролт 2:
+int main(){
+      int k;
+      int i;
+      int k;
+}
+
+Гаралт 2: 
+print(prog.V_decs())
+  // Давхардсан хувьсагч олдлоо
