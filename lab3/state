@@ -1,0 +1,12 @@
+Лаб3
+Лекцийн слайд дээр харуулсан Expression, Variable, Value, Binary, Unary, Assignment, IntValue, FloatValue, BoolValue гэх мэт классуудыг объект хандалтат програмчлалын дагуу класуудыг удамшил ашиглан зангидана.
+Тэгээд, z = x+2*y илэрхийллийг гар аргаар үүсгэж холбогдох харилцааг онооно. Тэгээд хэвлэнэ.
+Variable z = new Variable(id="z");
+Expression term1= new Variable(id="x");
+Expression term2a = new IntValue(val=2);
+Expression term2b = new Variable(id="y");
+Binary b2= new Binary(op="*", term1=term2a, term2=term2b);
+Expression term_main = new Binary(op="+", term1=term1, term2=b2);
+Assignment assignment1 = new Assignment(target = z, source=term_main);
+Үүний дараа sys.out.println(assignment1.toString()) функц дуудангуут бүх харилцааг хэвлэж харуулна. Бүх классуудад харгалзах toString функц бичих ёстой. 
+Гаралтын жишээ: [target = z, source = [op="+", term1=x, term2=[op="*", term1=2, term2=y]]]
