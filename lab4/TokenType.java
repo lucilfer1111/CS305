@@ -1,0 +1,4 @@
+package lab4;
+enum TokenType {
+    TYPE, IDENTIFIER, LEFT_PARENT, RIGHT_PARENT, LEFT_BRACE, RIGHT_BRACE
+}
