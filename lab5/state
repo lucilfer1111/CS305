@@ -1,0 +1,36 @@
+ Зарлагаа болон стэйтмэнт цуглуулахAssignment
+Том текст хувьсагч эсвэл файлаас C код уншина.
+Жишээ нь: 
+
+codes = """int main(){
+              int x;   
+              int y;   
+              x = 5;
+              y = 6;
+           }"""
+
+Лэксер эхэлж ажиллаад токенуудыг нэг нэгээр нь олж мэднэ. Тэгэх явцадаа токены төрөл зэргээр нь match хийнэ. Хэрэв тохирох төрөл мөн гэж үзвэл холбогдох Declaration, Assigment классын объектуудыг угсарна.
+Program классыг үүсгэх ба барьж авсан Declaration, Assignment -ийн объектуудыг програм классынхаа холбогдох гишүүнд нэмнэ.
+
+var prog = new Program()
+...
+prog.declarations.add(d1)
+...
+prog.statements.add(as1)
+
+Program классын объектоо хэвлэх үед доорх байдлаар хэвлэгдэх ёстой:
+
+#Програмын гаралт:::
+#Program:
+#   Declerations:
+#      type: int, name=x
+#      type: int, name y
+#   Statements:
+#      Assigment:
+#        target: x
+#        source: 5
+#      Assigment:
+#        target: y
+#        source: 6
+
+Ер нь лаб 3, лаб 4 -ийг нийлүүлж хийж байгаа гэж ойлгож болно
